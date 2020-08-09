@@ -28,7 +28,7 @@ twitter_username: b_giarrizzo
 github_username:  bgiarrizzo
 
 # Build settings
-theme: jekyll-now
+
 plugins:
   - jekyll-feed
 
