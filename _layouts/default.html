@@ -2,7 +2,7 @@
 <html lang="fr-FR" prefix="og: http://ogp.me/ns#" >
     <head>
 
-        <title>Test</title>
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
         {% include meta.html %}
         
