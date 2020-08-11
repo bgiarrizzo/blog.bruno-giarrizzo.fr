@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-4 p-3">
+            <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Qui suis-je ?</h4>
+            <div class="text-muted text-justify">
+                {{ site.footer_bio | safe }}
+            </div>
+        </div>
+        <div class="col-6 col-lg-4 p-3">
+            <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Navigation</h4>
+            <ul class="list-unstyled text-white pl-4">
+                <li>
+                    <span>Le Blog</span>
+                    <ul class="list-unstyled text-white pl-4">
+                        {% for category in site.categories %}
+                        <li>
+                            <a href="/category/{{ category[0] | slugify }}">{{ category[0] }} </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li>
+                    <a href="/cv/">
+                        Mon CV
+                    </a>
+                </li>
+                <li>
+                    <a href="/library/">
+                        Ma bibliothèque
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6 col-lg-4 p-3">
+            <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Me suivre</h4>
+            <ul class="fa-ul text-white">
+                <li>
+                    <i class="fa-li fab fa-twitter"></i> 
+                    <a href="https://twitter.com/{{ site.footer_links.twitter }}" target="_blank">
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-li fab fa-instagram"></i>
+                    <a href="https://instagram.com/{{ site.footer_links.instagram }}" target="_blank">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-li fab fa-youtube"></i> 
+                    <a href="https://www.youtube.com/channel/{{ site.footer_links.youtube }}" target="_blank">
+                        YouTube
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-li fab fa-github"></i>
+                    <a href="https://github.com/{{ site.footer_links.github }}" target="_blank">
+                        Github
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center border-top border-secondary">
+            <p class="text-center text-muted my-3">Copyright &copy; 2020
+                | {{ site.url }}
+            </p>
+        </div>
+    </div>
+</div>

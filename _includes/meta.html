@@ -1,0 +1,32 @@
+    <!-- UX -->
+    <meta name="rating" content="General" />
+    <meta name="Author" content="{{ author_infos.name }}" />
+    <meta name="Webmaster" content="{{ author_infos.name }}" />
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="Language" content="fr" />
+    <meta http-equiv="content-language" content="fr" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="identifier-URL" content="{{ site.url }}/" />
+
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+    <meta name="author" content="{{ site.name }}" />
+
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    {% endif %}
