@@ -42,3 +42,11 @@
     white-space: nowrap;
     -webkit-overflow-scrolling:touch
 }
+
+/* Formations */
+
+@media (max-width: 770px) { 
+    #formation_cover {
+        margin-bottom: 2em;
+    }
+ }
