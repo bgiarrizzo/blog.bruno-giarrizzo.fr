@@ -1,13 +1,19 @@
 ---
 title: s01e00
 subtitle: Hey, j'ai créé un podcast et une chaine youtube !
-
 summary: "Décrire l'épisode en une phrase ..."
+
 # explicit: 'yes'
 duration: "03:13"
-category: Podcast
+
+# contributors:
+#   - name:
+#     mail:
+#     uri:
+
 audio_file: episode0.mp3
 
+category: Podcast
 layout: podcast_episode
 ---
 

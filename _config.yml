@@ -41,14 +41,13 @@ email: contact@bruno-giarrizzo.fr
 # Podcast Settings 
 
 podcast_title: RebootBox Podcast
+podcast_subtitle: ""
+podcast_description: Le RebootBox Podcast
 
 ### download_url: is needed, if and only if audio files are hosted in a different location, it is the path of the directory where the audio files are stored
 download_url: ""
-subtitle: ""
-podcast_description: Le RebootBox Podcast
-author: Bruno Giarrizzo
 
-### author_url: This is the URL of a site owned by the author (see https://jsonfeed.org/version/1)
+author: Bruno Giarrizzo
 author_url: "https://www.bruno-giarrizzo.fr/"
 
 keywords: [octopod, podcast, magic]
@@ -57,8 +56,6 @@ itunes_categories:
   - <itunes:category text="Business"><itunes:category text="Entrepreneurship" /></itunes:category>
   - <itunes:category text="Society &amp; Culture"><itunes:category text="Documentary" /></itunes:category>
   - <itunes:category text="Technology" />
-
-episodes_per_feed_page: 100
 
 date_format: ordinal
 
@@ -71,10 +68,11 @@ license_url: https://creativecommons.org/licenses/by/4.0/
 license_image_url: https://i.creativecommons.org/l/by/4.0/88x31.png
 
 ### Feed links, optional
-itunes_url: https://itunes.apple.com/at/podcast/myname/id232323
-google_play_url: https://playmusic.app.goo.gl/...
-spotify_url: https://spotify.com/
-youtube_url: https://youtube.com/
+podcast_links:
+  itunes_url: https://itunes.apple.com/at/podcast/myname/id232323
+  google_play_url: https://playmusic.app.goo.gl/...
+  youtube_url: https://youtube.com/
+  spotify_url: https://spotify.com/
 
 # -----------------------------------------
 # Build settings

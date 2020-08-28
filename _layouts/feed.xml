@@ -32,7 +32,7 @@ layout: null
     </itunes:owner>
     <managingEditor>{{site.email}} ({{site.author}})</managingEditor>
     <copyright>{{ site.license }}</copyright>
-    <itunes:subtitle>{{ site.subtitle }}</itunes:subtitle>
+    <itunes:subtitle>{{ site.podcast_subtitle }}</itunes:subtitle>
     <itunes:keywords>{{ site.keywords | join:', ' }}</itunes:keywords>
     <image>
       <title>{{ site.podcast_title }}</title>
@@ -66,7 +66,7 @@ layout: null
             <enclosure url="{{ url }}" length="{{ post.audio_file | file_size }}" type="{{ page.format | mime_type }}" />
             <itunes:keywords>{{ post.tags }}</itunes:keywords>
             <itunes:title>{{ post.title }} - {{ post.subtitle }}</itunes:title>
-            <itunes:summary>{{ post.content }}</itunes:summary>
+            <itunes:summary><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape | remove_script_and_audio }}]]></itunes:summary>
             <itunes:author>{{ post.author | otherwise:site.author }}</itunes:author>
             <itunes:explicit>{{ post.explicit | otherwise:site.explicit }}</itunes:explicit>
             <itunes:duration>{{ post.duration }}</itunes:duration>
