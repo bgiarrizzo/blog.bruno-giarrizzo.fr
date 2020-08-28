@@ -40,20 +40,17 @@ email: contact@bruno-giarrizzo.fr
 # -----------------------------------------
 # Podcast Settings 
 
-podcast_title: RebootBox Podcast
-podcast_subtitle: ""
-podcast_description: Le RebootBox Podcast
-
-### download_url: is needed, if and only if audio files are hosted in a different location, it is the path of the directory where the audio files are stored
-download_url: ""
+podcast_title: "Titre"
+podcast_subtitle: "Sous titre"
+podcast_description: "Je parle de code, de développement personnel, d'investissement et de business"
 
 author: Bruno Giarrizzo
 author_url: "https://www.bruno-giarrizzo.fr/"
 
-keywords: [octopod, podcast, magic]
+keywords: [Bruno, Giarrizzo, Bruno Giarrizzo, Freelance, Développeur, DevOps, Ethical Hacker, Ethical, Hacker, Django, Python, Swift, Ansible, Terraform, Kubernetes, Infra as Code, Investissement, Immobilier, Entrepreneuriat, Business, Entreprise]
 
 itunes_categories: 
-  - <itunes:category text="Business"><itunes:category text="Entrepreneurship" /></itunes:category>
+  - <itunes:category text="Business"><itunes:category text="Investing" /></itunes:category>
   - <itunes:category text="Society &amp; Culture"><itunes:category text="Documentary" /></itunes:category>
   - <itunes:category text="Technology" />
 
@@ -73,6 +70,9 @@ podcast_links:
   google_play_url: https://playmusic.app.goo.gl/...
   youtube_url: https://youtube.com/
   spotify_url: https://spotify.com/
+
+download_url: ""
+episodes_per_feed_page: 100
 
 # -----------------------------------------
 # Build settings

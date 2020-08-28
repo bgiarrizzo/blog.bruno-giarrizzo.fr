@@ -16,6 +16,7 @@ layout: default
       <div class="col-9 col-sm-9 col-md-9 col-lg-10 my-auto">
           <h2 id="episode_date" class="text-muted">{{ page.date | date: '%B %d, %Y' }}</h2>
           <h1 id="episode_title">{{ page.title }}{% if page.subtitle %} - {{page.subtitle}}{% endif %}</h1>
+          <p class="mb-0">{{ page.summary }}</p>
       </div>
     </div>
   </div>
