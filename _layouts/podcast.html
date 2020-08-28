@@ -1,0 +1,48 @@
+---
+title: Mon Podcast
+layout: default
+navigation: 0
+---
+
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-4 col-sm-4 col-md-4 text-center">
+            <img class="img-fluid" id="podcast_cover" src="{{ site.url }}/images/podcast/general/logo.jpg">
+        </div>
+        <div class="col-8 col-sm-8 col-md-8 my-auto">
+            <h2 id="podcast_author" class="text-muted">{{ site.author }}</h2>
+            <h1 id="podcast_title">{{ site.title }}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container border-top">
+    {% for post in site.posts %}
+        {% if post.category == "Podcast" %}
+            {% if forloop.first %}
+                <div class="row h-100">
+            {% else %} 
+                {% if forloop.last %}
+                    <div class="row h-100 border-top mb-3">
+                {% else %}
+                    <div class="row h-100 border-top">
+                {% endif %}
+            {% endif %}
+                <div class="col-10 p-2">
+                    <p class="text-muted text-uppercase small font-weight-bold mb-0 mt-1">{{ post.date | date: '%B %d, %Y' }}</p>
+                    <h6 class="my-1">{{ post.title }}{% if post.subtitle %} - {{ post.subtitle }}{% endif %}</h6>
+                    <p class="text-justify text-muted small mb-1">
+                        {{ post.content | truncatewords_html: 50 | strip_html }} 
+                    </p>
+                    <p class="pt-1 mb-0">
+                        <a class="stretched-link" href="{{ site.url }}{{ post.url }}">Détail ...</a>
+                    </p>
+                </div>
+                <div class="col-2 my-auto mr-0 text-center">
+                    <p class="mb-1">{{ post.duration }}</p>
+                    <a href="{{ site.url }}/episodes/{{ post.audio.mp3 }}"><i class="fas fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

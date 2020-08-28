@@ -42,3 +42,9 @@
     white-space: nowrap;
     -webkit-overflow-scrolling:touch
 }
+
+/* audiojs */
+
+#player {
+    width: 100%;
+}

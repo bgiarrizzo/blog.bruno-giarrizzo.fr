@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+<script>
+  const player = new Plyr('#player');
+</script>
+
+<article>
+  <div class="container mb-3">
+    <div class="row">
+      <div class="col-4 col-sm-2 text-center">
+          <img class="img-fluid" id="podcast_cover" src="{{ site.url }}/images/podcast/general/logo.jpg">
+      </div>
+      <div class="col-8 col-sm-10 my-auto">
+          <h2 id="episode_date" class="text-muted">{{ page.date | date: '%B %d, %Y' }}</h2>
+          <h1 id="episode_title">{{ page.title }}{% if page.subtitle %} - {{ page.subtitle }}{% endif %}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container border-top">
+    <div class="row pt-3">
+      <div class="col-12 mb-3 border-bottom">
+        <h3>Notes de l'épisode</h3>
+        {{ content }}
+      </div>
+      <div class="col-12 pb-3 mb-3 border-bottom">
+        <h3 class="mb-3">Lecture ...</h3>
+        <audio id="player" controls>
+          <source src="{{ site.url }}/episodes/{{ page.audio_file }}" type="audio/mp3" />
+        </audio>
+      </div>
+      <div class="col-12 pb-3">
+        <h3>Commentaires</h3>
+        {% include disqus.html %}
+      </div>
+    </div>
+  </div>
+</article>
+
