@@ -52,7 +52,12 @@ author: Bruno Giarrizzo
 author_url: "https://www.bruno-giarrizzo.fr/"
 
 keywords: [octopod, podcast, magic]
-itunes_categories: [Technology, Business/Entrepreneurship, Society & Culture/Documentary]
+
+itunes_categories: 
+  - <itunes:category text="Business"><itunes:category text="Entrepreneurship" /></itunes:category>
+  - <itunes:category text="Society &amp; Culture"><itunes:category text="Documentary" /></itunes:category>
+  - <itunes:category text="Technology" />
+
 episodes_per_feed_page: 100
 
 date_format: ordinal
