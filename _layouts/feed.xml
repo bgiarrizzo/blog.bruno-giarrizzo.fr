@@ -13,7 +13,7 @@ layout: null
     <title>{{ site.podcast_title }}</title>
     <link>{{ site.url }}</link>
 
-    <atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" title="Episode RSS-Feed"/>
+    <atom:link href="{{ site.url }}/podcast.xml" rel="self" type="application/rss+xml" title="{{ site.author }} - Flux RSS du Podcast"/>
 
     {{ site | episode_feeds_rss:page.format }}
 
