@@ -40,7 +40,6 @@ email: contact@bruno-giarrizzo.fr
 # -----------------------------------------
 # Podcast Settings 
 
-
 podcast_title: RebootBox Podcast
 
 ### download_url: is needed, if and only if audio files are hosted in a different location, it is the path of the directory where the audio files are stored
@@ -53,8 +52,10 @@ author: Bruno Giarrizzo
 author_url: "https://www.bruno-giarrizzo.fr/"
 
 keywords: [octopod, podcast, magic]
-itunes_categories: [Technology]
+itunes_categories: [Technology, Business, ]
 episodes_per_feed_page: 100
+
+date_format: ordinal
 
 language: fr
 explicit: "no" # "yes" | "no" | clean
@@ -75,6 +76,7 @@ youtube_url: https://youtube.com/
 
 plugins:
   - jekyll-feed
+  - jekyll-octopod
 
 exclude:
   - .gitignore

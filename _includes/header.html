@@ -3,7 +3,11 @@
         <div class="row justify-content-start">
             <div class="col-10 text-center header-brandname">
                 {% if page.title %}
-                    <span class="h1">{{ page.title }}</span>
+                    {% if page.category == "Podcast" %}
+                        <span class="h1">{{ site.podcast_title }}</span>
+                    {% else %}
+                        <span class="h1">{{ page.title }}</span>
+                    {% endif %}
                 {% else %}
                     <span class="h1">Mon blog</span>
                 {% endif%}

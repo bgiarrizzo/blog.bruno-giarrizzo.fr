@@ -15,6 +15,8 @@ layout: null
 
     <atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" title="Episode RSS-Feed"/>
 
+    {{ site | episode_feeds_rss:page.format }}
+
     <description>{{ site.podcast_description | markdownify | strip_html }}</description>
     <lastBuildDate>{{ site.time | time_to_rssschema }}</lastBuildDate>
     <language>{{ site.language }}</language>
@@ -52,25 +54,19 @@ layout: null
             <link>{{ site.url }}{{ post.url }}</link>
             <comments>{{ site.url }}{{ post.url }}#disqus_thread</comments>
             <pubDate>{{ post.date | time_to_rssschema }}</pubDate>
-            {% for category in post.categories %}
-            <category><![CDATA[{{ category }}]]></category>
-            {% endfor %}
+            {% comment %} 
+              {% for category in post.categories %}
+                <category><![CDATA[{{ category }}]]></category>
+              {% endfor %} 
+            {% endcomment %}
             <guid isPermaLink="false">{{ site.url }}{{ post.url }}</guid>
             <description><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape | remove_script_and_audio }}]]></description>
             <content:encoded><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape | remove_script_and_audio }}]]></content:encoded>
             {% assign url = download_url | append: '/' | append: post.audio_file %}
-            {%- if post.filesize -%}
-              <enclosure url="{{ url }}" 
-                         length="{{ post | size_by_format: mp3 }}" 
-                         type="{{ page.format | mime_type }}" />
-            {%- else -%}
-              <enclosure url="{{ url }}" 
-                         length="{{ post.audio | audio:mp3 | file_size }}" 
-                         type="{{ mp3 | mime_type }}" />
-            {% endif %}
+            <enclosure url="{{ url }}" length="{{ post.audio_file | file_size }}" type="{{ page.format | mime_type }}" />
             <itunes:keywords>{{ post.tags }}</itunes:keywords>
-            <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
-            <itunes:summary>{{ post.summary }}</itunes:summary>
+            <itunes:title>{{ post.title }} - {{ post.subtitle }}</itunes:title>
+            <itunes:summary>{{ post.content }}</itunes:summary>
             <itunes:author>{{ post.author | otherwise:site.author }}</itunes:author>
             <itunes:explicit>{{ post.explicit | otherwise:site.explicit }}</itunes:explicit>
             <itunes:duration>{{ post.duration }}</itunes:duration>
