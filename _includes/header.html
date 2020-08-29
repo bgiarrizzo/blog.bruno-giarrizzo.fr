@@ -22,7 +22,9 @@
     <div class="nav-scroller container border-bottom mb-3">
         <nav class="nav d-flex justify-content-between">
             {% for category in site.categories %}
-                <a class="nav-link p-2 {% if category[0] == page.category %}font-weight-bold{% endif %} text-muted" href="/category/{{ category[0] | slugify }}">{{ category[0] }}</a>
+                {% if category[0] != "Podcast" %}
+                    <a class="nav-link p-2 {% if category[0] == page.category %}font-weight-bold{% endif %} text-muted" href="/category/{{ category[0] | slugify }}">{{ category[0] }}</a>
+                {% endif %}
             {% endfor %}
             </ul>
         </nav>
