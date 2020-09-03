@@ -33,7 +33,7 @@ navigation: 0
                     <p class="text-muted text-uppercase small font-weight-bold mb-0 mt-1">{{post.date | date: '%B %d, %Y' }}</p>
                     <h6 class="my-1">{{ post.title }}{% if post.subtitle %} - {{post.subtitle}}{% endif %}</h6>
                     <p class="text-justify text-muted small mb-1">
-                        {{ post.content | truncatewords_html: 50 | strip_html }} 
+                        {{ post.summary }} 
                     </p>
                     <p class="pt-1 mb-0">
                         <a class="stretched-link" href="{{ site.url }}{{ post.url }}">Détail ...</a>
