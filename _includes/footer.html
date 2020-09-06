@@ -4,26 +4,35 @@
             <div class="col-12 col-lg-4 p-3">
                 <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Qui suis-je ?</h4>
                 <div class="text-muted text-justify">
-                    {{ site.footer_bio | safe }}
+                    {{ site.description_long | safe }}
                 </div>
             </div>
             <div class="col-6 col-lg-4 p-3">
                 <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Navigation</h4>
                 <ul class="list-unstyled text-white pl-4">
                     <li>
-                        <a href="{{ site.url }}">Le Blog</a>
+                        <a href="{{ site.url }}">
+                            Mon Blog
+                        </a>
                     </li>
                     <li>
-                        <a href="https://podcast.bruno-giarrizzo.fr/">Mon Podcast</a>
+                        <a href="{{ site.url }}/podcast/">
+                            Mon Podcast
+                        </a>
                     </li>
                     <li>
-                        <a href="/resume/">
+                        <a href="{{ site.url }}/resume/">
                             Mon CV
                         </a>
                     </li>
                     <li>
-                        <a href="/library/">
+                        <a href="{{ site.url }}/library/">
                             Ma bibliothèque
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ site.url }}/about/">
+                            A Propos
                         </a>
                     </li>
                 </ul>

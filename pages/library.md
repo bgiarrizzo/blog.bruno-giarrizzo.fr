@@ -2,6 +2,7 @@
 layout: page
 title: Ma bibliothèque
 permalink: /library/
+cover: "images/pages/bibli/cover.jpg"
 ---
 
 J'adore lire, depuis tout gosse !

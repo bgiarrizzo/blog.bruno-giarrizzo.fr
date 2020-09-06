@@ -2,40 +2,36 @@
 layout: default
 ---
 
-<div class="posts mb-3">
-    {% for post in site.posts %}
-        {% if post.category != "Podcast" %}
-            <article class="container">
-                <h2>{{ post.title }}</h2>
-                <p class="text-muted"><i class="far fa-clock"></i> {{ post.date | date: "%B %e, %Y" }} {{ post.created_on |date:"l, j F Y" }}</p>
-                <div class="blog-post-preview text-justify">
-                    {{ post.excerpt }}
-                </div>
-                {% if forloop.last %}
-                    <div class="container border-top pt-3">
-                {% else %}
-                    <div class="container border-top border-bottom py-3 mb-3">
-                {% endif %}
-                    <div class="row">
-                        <ul class="col-9 list-inline text-center mt-0 my-auto">
-                            {% if post.tags %}
-                                {% for tag in post.tags %}
-                                    <li class="list-inline-item">
-                                        <a class="badge badge-primary text-white">#{{ tag }}</a>
-                                    </li>
-                                {% endfor %}
-                            {% else %}
-                                <p>Ce post n'a pas de tags associés</p>
-                            {% endif %}
-                        </ul>
-                        <div class="col-3 text-center my-auto">
-                            <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-sm btn-primary">
-                                Lire la suite
-                            </a>
+<div class="container">
+    <div class="row">
+        {% for post in site.posts %}
+            {% if post.category != "Podcast" %}
+                <article class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow">
+                        {% if post.cover %}
+                            <img alt="{{ post.cover_alt}}" class="card-img-top" src="{{ site.url }}/{{ post.cover }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a href="{{ site.url }}{{ post.url }}" class="stretched-link">
+                                    {{ post.title }}
+                                </a>
+                            </h2>
+                            <p class="text-muted">
+                                <i class="far fa-clock"></i> {{ post.date | date: "%B %e, %Y" }}
+                            </p>
+                            <p class="text-justify mb-0">
+                                {{ post.summary }}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                Par Bruno, dans <strong>{{ post.categories }}</strong>
+                            </small>
                         </div>
                     </div>
-                </div>
-            </article>
-        {% endif %}
-    {% endfor %}
+                </article>
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>

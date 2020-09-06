@@ -1,13 +1,9 @@
 <header>
-    <div class="container border-bottom py-3">
+    <div class="container border-bottom py-3 mb-3">
         <div class="row justify-content-start">
             <div class="col-10 text-center header-brandname">
                 {% if page.title %}
-                    {% if page.category == "Podcast" %}
-                        <span class="h1">{{ site.podcast_title }}</span>
-                    {% else %}
-                        <span class="h1">{{ page.title }}</span>
-                    {% endif %}
+                    <span class="h1">{{ page.title }}</span>
                 {% else %}
                     <span class="h1">Mon blog</span>
                 {% endif%}
@@ -18,15 +14,5 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="nav-scroller container border-bottom mb-3">
-        <nav class="nav d-flex justify-content-between">
-            {% for category in site.categories %}
-                {% if category[0] != "Podcast" %}
-                    <a class="nav-link p-2 {% if category[0] == page.category %}font-weight-bold{% endif %} text-muted" href="/category/{{ category[0] | slugify }}">{{ category[0] }}</a>
-                {% endif %}
-            {% endfor %}
-            </ul>
-        </nav>
     </div>
 </header>

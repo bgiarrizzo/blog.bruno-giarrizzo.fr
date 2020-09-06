@@ -2,10 +2,42 @@
 layout: default
 ---
 
-<article class="container">
-
-  <div class="entry text-justify">
-    {{ content }}
+<div class="container">
+  <div class="row">
+    <div class="col-2 mx-4 d-none d-lg-block">
+      <div class="sticky-top mb-3" style="top: 1.5em;">
+        <img class="img-fluid rounded-circle float-right mb-3" src="{{ site.url }}/images/photo-original.jpg" />
+        <h3 class="text-right">{{ site.name }}</h3>
+        <p class="text-right">
+            <small>
+            {{ site.description_long }}
+            </small>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+      {% if page.cover %}
+        <img class="img-fluid w-100 rounded shadow" src="{{ site.url }}/{{ page.cover }}">
+        <p class="border-bottom my-3 pb-2">
+      {% else %}
+        <p class="border-bottom mb-3 pb-2">
+      {% endif %}
+        Par <strong>Bruno</strong>
+      </p>
+      <article class="card shadow mb-3">
+        <div class="card-body">
+          <h1 class="card-title">
+            {{ page.title }}
+          </h1>
+          <p class="card-text font-italic">
+            {{ page.summary }}
+          </p>
+          <hr />
+          <div class="text-justify">
+            {{ content }}
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
-
-</article>
+</div>

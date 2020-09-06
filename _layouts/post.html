@@ -2,14 +2,77 @@
 layout: default
 ---
 
-<article class="container">
-
-  <div class="entry text-justify">
-    {{ content }}
+<div class="container">
+  <div class="row">
+    <div class="col-2 mx-4 d-none d-lg-block">
+      <div class="sticky-top mb-3" style="top: 1.5em;">
+      <img class="img-fluid rounded-circle float-right mb-3" src="{{ site.url }}/images/photo-original.jpg" />
+      <h3 class="text-right">{{ site.name }}</h3>
+      <p class="text-right">
+          <small>
+           {{ site.description_long }}
+          </small>
+      </p>
+      <hr />
+      <p class="text-right font-weight-bold">
+        Publié :
+      </p>
+      <p class="text-right">
+        <small>
+          <i class="far fa-clock"></i> {{ page.date | date: "%B %e, %Y" }}
+        </small>
+      </p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+      {% if page.cover %}
+        <img class="img-fluid w-100 rounded shadow" src="{{ site.url }}/{{ page.cover }}">
+        <p class="border-bottom my-3 pb-2">
+      {% else %}
+        <p class="border-bottom mb-3 pb-2">
+      {% endif %}
+        Par <strong>Bruno</strong>, dans <a href="{{ site.url }}/category/{{ page.categories[0] | slugify }}/">{{ page.categories }}</a>
+      </p>
+      <article class="card shadow my-4">
+        <div class="card-body">
+          <h1>
+            {{ page.title }}
+          </h1>
+          <p class="font-italic">
+            {{ page.summary }}
+          </p>
+          <hr />
+          <div class="text-justify">
+            {{ content }}
+          </div>
+        </div>
+      </article>
+      <div class="card shadow mb-4 d-lg-none">
+        <div class="card-header">
+          L'auteur
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4 col-sm-4 col-md-3 my-auto">
+              <img class="img-fluid rounded-circle" src="{{ site.url }}/images/photo-original.jpg" />
+            </div>
+            <div class="col-8 col-sm-8 col-md-9 my-auto">
+              <h3 class="pb-2 border-bottom">{{ site.name }}</h3>
+              <p class="mb-0">
+                {{ site.description_long }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow mb-4">
+        <div class="card-header">
+          Commentaires
+        </div>
+        <div class="card-body">
+          {% include disqus.html %}
+        </div>
+      </div>
+    </div>
   </div>
-
-  <hr />
-
-  {% include disqus.html %}
- 
-</article>
+</div>

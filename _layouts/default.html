@@ -2,7 +2,13 @@
 <html lang="fr-FR" prefix="og: http://ogp.me/ns#" >
     <head>
 
-        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+        <title>
+            {% if page.title %}
+                {{ page.title }} | bruno-giarrizzo.fr
+            {% else %}
+                bruno-giarrizzo.fr | {{ site.description }}
+            {% endif %}
+        </title>
 
         {% include meta.html %}
         {% include analytics.html %}
@@ -12,7 +18,7 @@
     <body>
 
         {% include navigation.html %}
-        {% include header.html %}
+        {% comment %} {% include header.html %} {% endcomment %}
 
         <main>
             {{ content }}
