@@ -7,36 +7,54 @@ layout: default
   const player = new Plyr('#player');
 </script>
 
-<article>
-  <div class="container mb-3">
-    <div class="row">
-      <div class="col-3 col-sm-3 col-md-3 col-lg-2 text-center">
-          <img class="img-fluid" id="podcast_cover" src="{{ site.url }}/images/podcast/general/logo.jpg">
+<article class="container">
+  <div class="row">
+  <div class="col-2 mx-4 d-none d-lg-block">
+    <div class="sticky-top mb-3" style="top: 1.5em;">
+      <img class="img-fluid float-right mb-3" src="{{ site.url }}/images/podcast/general/logo.jpg" />
+      <h3 class="text-right">{{ site.podcast_title }}</h3>
+        <p class="text-right">
+          <small>
+              {{ site.podcast_description }}
+          </small>
+        </p>
       </div>
-      <div class="col-9 col-sm-9 col-md-9 col-lg-10 my-auto">
-          <h2 id="episode_date" class="text-muted">{{ page.date | date: '%B %d, %Y' }}</h2>
-          <h1 id="episode_title">{{ page.title }}{% if page.subtitle %} - {{page.subtitle}}{% endif %}</h1>
-          <p class="mb-0">{{ page.summary }}</p>
+  </div>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+    
+    <div class="card d-lg-none">
+      <div class="card-header">{{ page.date | date: '%B %d, %Y' }}</div>
+      <div class="card-body row">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 my-auto mx-auto">
+            <img class="img-fluid" id="podcast_cover" src="{{ site.url }}/images/podcast/general/logo.jpg">
+        </div>
+        <div class="col-9 col-sm-9 col-md-9 col-lg-10 my-auto">
+            <h1 id="episode_title">{{ page.title }}{% if page.subtitle %} - {{page.subtitle}}{% endif %}</h1>
+            <p class="mb-0">{{ page.summary }}</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container border-top">
     <div class="row">
-      <div class="col-12 pt-3 pb-2 border-bottom">
-        <audio id="player" controls>
+      <div class="col-12 pt-3 pb-3 d-flex justify-content-center">
+        <audio id="player" class="" controls>
           <source src="{{ site.url }}/episodes/{{ page.audio_file }}" type="audio/mp3" />
         </audio>
       </div>
-      <div class="col-12 py-3 border-bottom">
-        <h3>Notes de l'épisode</h3>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-header">Notes de l'épisode</div>
+      <div class="card-body">
         {{ content }}
       </div>
-      <div class="col-12 py-3">
-        <h3>Commentaires</h3>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-header">Commentaires</div>
+      <div class="card-body">
         {% include disqus.html %}
       </div>
     </div>
-  </div>
 </article>
 
