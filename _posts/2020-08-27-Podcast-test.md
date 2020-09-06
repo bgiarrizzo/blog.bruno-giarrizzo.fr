@@ -1,7 +1,7 @@
 ---
 title: s01e00
-subtitle: Hey, j'ai créé un podcast et une chaine youtube !
-summary: "Décrire l'épisode en une phrase ..."
+subtitle: Hey, j'ai lancé un podcast et une chaine youtube !
+summary: "Plus de détails dans les notes de l'épisode ..."
 
 # explicit: 'yes'
 duration: "03:13"
