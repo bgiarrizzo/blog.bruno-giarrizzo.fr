@@ -39,39 +39,62 @@
                 </ul>
             </div>
             <div class="col-6 col-lg-4 p-3">
-                <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Me suivre</h4>
+                <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Le podcast</h4>
                 <ul class="fa-ul text-white">
                     <li>
-                        <i class="fa-li fab fa-twitter"></i> 
-                        <a href="https://twitter.com/{{ site.footer_links.twitter }}" target="_blank">
-                            Twitter
+                        <i class="fa-li fas fa-rss"></i>
+                        <a href="{{ site.url }}/podcast.xml" target="_blank">
+                            Flux RSS
                         </a>
                     </li>
                     <li>
-                        <i class="fa-li fab fa-instagram"></i>
-                        <a href="https://instagram.com/{{ site.footer_links.instagram }}" target="_blank">
-                            Instagram
+                        <i class="fa-li fas fa-podcast"></i>
+                        <a href="{{ site.podcast_links.itunes_url }}" target="_blank">
+                            Apple Podcast
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-li fab fa-google-play"></i>
+                        <a href="{{ site.podcast_links.google_play_url }}" target="_blank">
+                            Google Podcast
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-li fab fa-spotify"></i> 
+                        <a href="{{ site.podcast_links.spotify_url }}" target="_blank">
+                            Spotify
                         </a>
                     </li>
                     <li>
                         <i class="fa-li fab fa-youtube"></i> 
-                        <a href="https://www.youtube.com/channel/{{ site.footer_links.youtube }}" target="_blank">
+                        <a href="{{ site.podcast_links.youtube_url }}" target="_blank">
                             YouTube
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-li fab fa-github"></i>
-                        <a href="https://github.com/{{ site.footer_links.github }}" target="_blank">
-                            Github
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="row">
+            <div class="col-12 border-top border-secondary">
+                <div class="d-flex justify-content-center py-3">
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/{{ site.social_ids.twitter }}" target="_blank">
+                        <i class="fab fa-twitter fa-lg text-muted fa-2x px-3"></i>
+                    </a>
+                    <!--Instagram-->
+                    <a href="https://instagram.com/{{ site.social_ids.instagram }}" target="_blank">
+                        <i class="fab fa-instagram fa-lg text-muted fa-2x px-3"></i>
+                    </a>
+                    <a href="https://github.com/{{ site.social_ids.github }}" target="_blank">
+                        <i class="fab fa-github fa-lg text-muted fa-2x px-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-12 text-center border-top border-secondary">
                 <p class="text-center text-muted my-3">Copyright &copy; 2020
-                    | https://www.bruno-giarrizzo.fr
+                    | {{ site.url }}
                 </p>
             </div>
         </div>

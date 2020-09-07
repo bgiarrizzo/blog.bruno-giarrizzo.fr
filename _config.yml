@@ -47,14 +47,12 @@ email: contact@bruno-giarrizzo.fr
 # -----------------------------------------
 # Podcast Settings 
 
-podcast_title: "Titre"
+podcast_title: "Unlock Business & Code"
 podcast_subtitle: "Sous titre"
-podcast_description: "Je parle de code, de développement personnel, d'investissement et de business"
+podcast_description: "J'apprends le business, l'investissement, je suis aussi freelance en IT. Je partage ici ce que j'apprendrai au cours de mon voyage."
 
 author: Bruno Giarrizzo
 author_url: "https://www.bruno-giarrizzo.fr/"
-
-keywords: [Bruno, Giarrizzo, Bruno Giarrizzo, Freelance, Développeur, DevOps, Ethical Hacker, Ethical, Hacker, Django, Python, Swift, Ansible, Terraform, Kubernetes, Infra as Code, Investissement, Immobilier, Entrepreneuriat, Business, Entreprise]
 
 itunes_categories: 
   - <itunes:category text="Business"><itunes:category text="Investing" /></itunes:category>
