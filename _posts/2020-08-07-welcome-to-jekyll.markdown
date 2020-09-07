@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Jekyll!"
-summary: Mon cul ma chatte ...
+summary: J'écris un petit résumé, ca résume bien, en général ...
 cover: "images/posts/covers/2020-08-07.png"
 cover_alt: "Ma cover"
 date: 2020-08-07 13:33:12 +0200

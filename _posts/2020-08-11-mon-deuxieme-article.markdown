@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Mon 2eme article !"
-summary: Mon cul ma chatte ...
-date: 2020-08-11 11:15:12 +0200
+summary: J'écris un petit résumé, ca résume bien, en général ...
+date: 2020-09-07 17:07
 categories: Business
 tags: machin truc bidule
 ---
