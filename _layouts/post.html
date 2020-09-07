@@ -4,7 +4,7 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <div class="col-2 mx-4 d-none d-lg-block">
+    <div class="col-lg-2 mx-4 d-none d-lg-block">
       <div class="sticky-top mb-3" style="top: 1.5em;">
       <img class="img-fluid rounded-circle float-right mb-3" src="{{ site.url }}/images/photo-original.jpg" />
       <h3 class="text-right">{{ site.name }}</h3>
@@ -24,32 +24,62 @@ layout: default
       </p>
       </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
       {% if page.cover %}
         <img class="img-fluid w-100 rounded shadow" src="{{ site.url }}/{{ page.cover }}">
-        <p class="border-bottom my-3 pb-2">
+        <p class="border-bottom my-4 pb-2">
       {% else %}
-        <p class="border-bottom mb-3 pb-2">
+        <p class="border-bottom mb- pb-2">
       {% endif %}
         Par <strong>Bruno</strong>, dans <a href="{{ site.url }}/category/{{ page.categories[0] | slugify }}/">{{ page.categories }}</a>
       </p>
-      <article class="card shadow my-4">
-        <div class="card-body">
+      <article class="my-4">
           <h1>
             {{ page.title }}
           </h1>
-          <p class="font-italic">
+          <p class="font-italic mb-5">
             {{ page.summary }}
           </p>
-          <hr />
           <div class="text-justify">
             {{ content }}
           </div>
-        </div>
       </article>
       <div class="card shadow mb-4 d-lg-none">
         <div class="card-header">
-          L'auteur
+          Sharing is caring
+        </div>
+        <div class="card-body text-center">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="" target="_blank">
+                <i class="far fa-envelope fa-lg text-muted fa-2x mx-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-twitter fa-lg text-muted fa-2x mx-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-facebook fa-lg text-muted fa-2x mx-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-linkedin fa-lg text-muted fa-2x mx-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://wa.me/?text={{ page.title }} - {{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-whatsapp fa-lg text-muted fa-2x mx-3"></i>
+              </a>
+            </li>
+        </div>
+      </div>
+      <div class="card shadow mb-4 d-lg-none">
+        <div class="card-header">
+          {{ site.name }}
         </div>
         <div class="card-body">
           <div class="row">
@@ -57,7 +87,6 @@ layout: default
               <img class="img-fluid rounded-circle" src="{{ site.url }}/images/photo-original.jpg" />
             </div>
             <div class="col-8 col-sm-8 col-md-9 my-auto">
-              <h3 class="pb-2 border-bottom">{{ site.name }}</h3>
               <p class="mb-0">
                 {{ site.description_long }}
               </p>
@@ -65,12 +94,44 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="card shadow mb-4">
+      <div class="card shadow mb-3">
         <div class="card-header">
           Commentaires
         </div>
         <div class="card-body">
           {% include disqus.html %}
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1 px-0 ml-4 d-none d-lg-block">
+      <div class="card sticky-top shadow mb-3" style="top: 1.5em;">
+        <div class="card-body mx-auto text-center pb-0">
+          <ul class="list-unstyled">
+            <li>
+              <a href="" target="_blank">
+                <i class="far fa-envelope fa-lg text-muted fa-2x my-3"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-twitter fa-lg text-muted fa-2x my-3"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-facebook fa-lg text-muted fa-2x my-3"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-linkedin fa-lg text-muted fa-2x my-3"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/?text={{ page.title }} - {{ site.url }}{{ page.url }}" target="_blank">
+                <i class="fab fa-whatsapp fa-lg text-muted fa-2x my-3"></i>
+              </a>
+            </li>
         </div>
       </div>
     </div>
