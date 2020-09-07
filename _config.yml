@@ -6,7 +6,7 @@ description: Bruno Giarrizzo, Freelance, Developer & DevOps
 description_meta: "Bruno Giarrizzo, Papa, Freelance, Developpeur & DevOps. Parle de code, de développement personnel, d'investissement et de business."
 description_long: >
   Papa, Freelance, Developpeur & DevOps. Parle de code, de développement personnel, d'investissement et de business. <br /><br />
-  <a href="{{ site.url }}/about/">Contactez moi</a> pour toute question, ou <a href="https://paypal.me/bgiarrizzo" target="_blank">soutenez mon travail</a> !
+  <a href="https://www.bruno-giarrizzo.fr/about/">Contactez moi</a> pour toute question, ou <a href="https://paypal.me/bgiarrizzo" target="_blank">soutenez mon travail</a> !
 
 keywords: [Bruno, Giarrizzo, Bruno Giarrizzo, Freelance, Développeur, DevOps, Ethical Hacker, Ethical, Hacker, Django, Python, Swift, Ansible, Terraform, Kubernetes, Infra as Code, Investissement, Immobilier, Entrepreneuriat, Business, Entreprise]
 
