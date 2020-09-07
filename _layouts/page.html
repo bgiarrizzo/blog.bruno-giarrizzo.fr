@@ -9,9 +9,9 @@ layout: default
         <img class="img-fluid rounded-circle float-right mb-3" src="{{ site.url }}/images/photo-original.jpg" />
         <h3 class="text-right">{{ site.name }}</h3>
         <p class="text-right">
-            <small>
+          <small>
             {{ site.description_long }}
-            </small>
+          </small>
         </p>
       </div>
     </div>
@@ -24,13 +24,12 @@ layout: default
       {% endif %}
         Par <strong>Bruno</strong>
       </p>
-      <article class="card shadow mb-3">
-        <div class="card-body">
-          <h1 class="card-title">
+      <article class="mb-3">
+          <h1>
             {{ page.title }}
           </h1>
           {% if page.summary %}
-            <p class="card-text font-italic">
+            <p class="font-italic">
               {{ page.summary }}
             </p>
           {% endif %}

@@ -24,7 +24,7 @@ bête à coder : Le petit script sympa, la webapp, le CMS opensource ...
 
 Ce blog, ce (futur) podcast, et cette (future) chaine youtube sont entièrement libres. Je rédige, enregistre, et tourne sur mon temps libre, je ne monétise rien (pour l'instant ?) et par conséquent ne me rapportent pas d'argent.
 
-Néanmoins, si mes contenus vous plaisent, vous pouvez me soutenir ponctuellement [via PayPal](https://www.paypal.com/paypalme/bgiarrizzo), ou plus régulièrement [via liberapay](https://liberapay.com/bgiarrizzo/donate) .
+Néanmoins, si mes contenus vous plaisent, vous pouvez me soutenir ponctuellement [via PayPal](https://paypal.me/bgiarrizzo), ou plus régulièrement [via liberapay](https://liberapay.com/bgiarrizzo/donate) .
 
 Vous pourriez me suivre sur Facebook ou Instagram, mais ces comptes ne sont plus actifs, et existent uniquement pour ma présence sur le web, je suis disponible parfois sur [twitter](https://twitter.com/b_giarrizzo). 
 

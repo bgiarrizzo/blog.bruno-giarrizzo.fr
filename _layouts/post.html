@@ -6,22 +6,22 @@ layout: default
   <div class="row">
     <div class="col-lg-2 mx-4 d-none d-lg-block">
       <div class="sticky-top mb-3" style="top: 1.5em;">
-      <img class="img-fluid rounded-circle float-right mb-3" src="{{ site.url }}/images/photo-original.jpg" />
-      <h3 class="text-right">{{ site.name }}</h3>
-      <p class="text-right">
+        <img class="img-fluid rounded-circle float-right mb-3" src="{{ site.url }}/images/photo-original.jpg" />
+        <h3 class="text-right">{{ site.name }}</h3>
+        <p class="text-right">
           <small>
-           {{ site.description_long }}
+            {{ site.description_long }}
           </small>
-      </p>
-      <hr />
-      <p class="text-right font-weight-bold">
-        Publié :
-      </p>
-      <p class="text-right">
-        <small>
-          <i class="far fa-clock"></i> {{ page.date | date: "%B %e, %Y" }}
-        </small>
-      </p>
+        </p>
+        <hr />
+        <p class="text-right font-weight-bold">
+          Publié :
+        </p>
+        <p class="text-right">
+          <small>
+            <i class="far fa-clock"></i> {{ page.date | date: "%B %e, %Y" }}
+          </small>
+        </p>
       </div>
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-7">
@@ -82,23 +82,16 @@ layout: default
           {{ site.name }}
         </div>
         <div class="card-body">
-          <div class="row">
-            <div class="col-4 col-sm-4 col-md-3 my-auto">
-              <img class="img-fluid rounded-circle" src="{{ site.url }}/images/photo-original.jpg" />
-            </div>
-            <div class="col-8 col-sm-8 col-md-9 my-auto">
-              <p class="mb-0">
-                {{ site.description_long }}
-              </p>
-            </div>
-          </div>
+          <p class="card-text">
+            {{ site.description_long }}
+          </p>
         </div>
       </div>
       <div class="card shadow mb-3">
         <div class="card-header">
           Commentaires
         </div>
-        <div class="card-body">
+        <div class="card-body py-1 px-3">
           {% include disqus.html %}
         </div>
       </div>
