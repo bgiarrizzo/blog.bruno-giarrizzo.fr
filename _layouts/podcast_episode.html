@@ -22,7 +22,7 @@ layout: default
   </div>
   <div class="col-12 col-sm-12 col-md-12 col-lg-8">
     
-    <div class="card d-lg-none">
+    <div class="card d-lg-none shadow">
       <div class="card-header">{{ page.date | date: '%B %d, %Y' }}</div>
       <div class="card-body row">
         <div class="col-3 col-sm-3 col-md-3 col-lg-2 my-auto mx-auto">
@@ -43,14 +43,14 @@ layout: default
       </div>
     </div>
 
-    <div class="card mb-3">
+    <div class="card mb-3 shadow">
       <div class="card-header">Notes de l'épisode</div>
       <div class="card-body">
         {{ content }}
       </div>
     </div>
 
-    <div class="card mb-3">
+    <div class="card mb-3 shadow">
       <div class="card-header">Commentaires</div>
       <div class="card-body">
         {% include disqus.html %}

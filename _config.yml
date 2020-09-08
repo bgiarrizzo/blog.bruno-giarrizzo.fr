@@ -83,7 +83,6 @@ episodes_per_feed_page: 100
 # Build settings
 
 plugins:
-  - jekyll-feed
   - jekyll-octopod
 
 exclude:

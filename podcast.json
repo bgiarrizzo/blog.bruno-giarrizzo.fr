@@ -1,5 +1,5 @@
 ---
-layout: jsonfeed
+layout: podcast_feed_json
 format: mp3
 ---
 {{ content }}
