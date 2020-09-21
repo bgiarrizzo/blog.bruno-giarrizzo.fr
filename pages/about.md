@@ -6,7 +6,7 @@ cover: "images/posts/covers/2020-08-07.png"
 cover_alt: "Ma cover"
 ---
 
-Vous pouvez me contactez sur "bruno **arobase** bruno-giarrizzo.fr". Merci de ne pas ajouter cette adresse à vos bases de données ou mailing-lists.
+Vous pouvez me contactez sur "bruno **arobase** giarrizzo **point** fr". Merci de ne pas ajouter cette adresse à vos bases de données ou mailing-lists.
 
 <h2 class="pb-2 border-bottom">A propos de l'auteur</h2>
 
