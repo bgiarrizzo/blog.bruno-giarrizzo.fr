@@ -26,7 +26,7 @@ baseurl: ""
 disqus: bruno-giarrizzo
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-170479711-1
+google_analytics: UA-178521232-1
 
 # Misc
 
@@ -38,7 +38,7 @@ footer_bio: >
 social_ids:
   twitter: b_giarrizzo
   instagram: bgiarrizzo
-  youtube: UC3Y7TRaGO0sWjv0sl9jyoqg
+  youtube: UCSXj4YcwcmH57INCrNAR03Q
   github:  bgiarrizzo
   gitlab: bgiarrizzo
 
@@ -73,7 +73,7 @@ license_image_url: https://i.creativecommons.org/l/by/4.0/88x31.png
 podcast_links:
   itunes_url: https://itunes.apple.com/at/podcast/myname/id232323
   google_play_url: https://playmusic.app.goo.gl/...
-  youtube_url: https://youtube.com/
+  youtube_url: https://www.youtube.com/channel/UCSXj4YcwcmH57INCrNAR03Q
   spotify_url: https://spotify.com/
 
 download_url: ""
