@@ -1,6 +1,6 @@
 ---
 title: s01e00
-subtitle: Hey, j'ai lancé un podcast et une chaine youtube !
+subtitle: Hey, j'ai lancé un podcast !
 summary: "Plus de détails dans les notes de l'épisode ..."
 
 # explicit: 'yes'
