@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4 p-3">
-                <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Qui suis-je ?</h4>
+                <h4 class="text-white pl-3 pb-3 border-bottom border-secondary">Qui suis-je ?</h4>
                 <div class="text-muted text-justify">
                     {{ site.description_long | safe }}
                 </div>
             </div>
             <div class="col-6 col-lg-4 p-3">
-                <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Navigation</h4>
+                <h4 class="text-white pl-3 pb-3 border-bottom border-secondary">Navigation</h4>
                 <ul class="list-unstyled text-white pl-4">
                     <li>
                         <a href="{{ site.url }}">
@@ -39,7 +39,7 @@
                 </ul>
             </div>
             <div class="col-6 col-lg-4 p-3">
-                <h4 class="text-white pl-3 pb-2 border-bottom border-secondary">Podcast</h4>
+                <h4 class="text-white pl-3 pb-3 border-bottom border-secondary">Podcast</h4>
                 <ul class="fa-ul text-white">
                     <li>
                         <i class="fa-li fas fa-rss"></i>
@@ -93,9 +93,10 @@
         </div>
         <div class="row">
             <div class="col-12 text-center border-top border-secondary">
-                <p class="text-center text-muted my-3">Copyright &copy; 2020
-                    | {{ site.url }}
-                </p>
+                <div class="d-flex justify-content-center py-3">
+                    <span class="px-3 text-muted">{{ site.license }}</span>
+                    <span class="px-3 text-muted">{{ site.url }}</span>
+                </div>
             </div>
         </div>
     </div>
