@@ -98,11 +98,17 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Categories
 collections:
+  # Blog Categories
   category:
     output: true
     permalink: /:collection/:name/
+  # Resume sections exploded in markdown files
+  resume:
+    output: true
+  # book listing in markdown files
+  books:
+    output: true
 
 defaults:
   - scope:
