@@ -28,6 +28,6 @@ Néanmoins, si mes contenus vous plaisent, vous pouvez me soutenir ponctuellemen
 
 Vous pourriez me suivre sur Facebook ou Instagram, mais ces comptes ne sont plus actifs, et existent uniquement pour ma présence sur le web, je suis disponible parfois sur [twitter](https://twitter.com/b_giarrizzo). 
 
-Vous pouvez également me suivre via mon [flux RSS](https://www.bruno-giarrizzo.fr/feed.xml) ou vous abonner à la newsletter (formulaire en bas de page).
+Vous pouvez également me suivre via mon [flux RSS](https://www.bruno-giarrizzo.fr/feed.xml).
 
 Je vous laisse découvrir mon travail et mon univers. A bientôt :)
