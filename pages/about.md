@@ -2,7 +2,7 @@
 layout: page
 title: A Propos
 permalink: /about/
-cover: "images/posts/covers/2020-08-07.png"
+cover: "images/pages/about/cover.jpg"
 cover_alt: "Ma cover"
 ---
 
