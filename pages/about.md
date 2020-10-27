@@ -12,13 +12,9 @@ Vous pouvez me contactez sur "bruno **arobase** giarrizzo **point** fr". Merci d
 
 Bonjour ! Je suis Bruno, lillois, marié et Papa d'une petite fille. 
 
-Je code depuis plusieurs mois en voguant entre le Back-end (Python / Django / Flask), 
-le Front-end (React), le mobile (swift). J'évolue maintenant dans des missions Dev et Ops, 
-jonglant avec automatisation, déploiement applicatifs, au travers d'infrastructure cloud, 
-developpement d'API, de front-end React/Vue.js.
+Je code depuis plusieurs mois en voguant entre le Back-end (Python / Django / Flask), le Front-end (React), le mobile (swift). J'évolue maintenant dans des missions Dev et Ops, jonglant avec automatisation, déploiement applicatifs, au travers d'infrastructure cloud, developpement d'API, de front-end React/Vue.js.
 
-iPhone à la main, Macbook dans le sac à dos, je cherche toujours une petite ou une grosse 
-bête à coder : Le petit script sympa, la webapp, le CMS opensource ...
+iPhone à la main, Macbook dans le sac à dos, je cherche toujours une petite ou une grosse bête à coder : Le petit script sympa, la webapp, le CMS opensource ...
 
 <h2 class="pb-2 border-bottom">Soutenir et s'abonner</h2>
 
