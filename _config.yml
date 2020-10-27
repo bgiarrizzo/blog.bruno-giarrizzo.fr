@@ -65,7 +65,7 @@ language: fr
 explicit: "no" # "yes" | "no" | clean
 
 ### License Config, you really should configure this
-license: CC BY 4.0
+license: 4.0
 license_url: https://creativecommons.org/licenses/by/4.0/
 license_image_url: https://i.creativecommons.org/l/by/4.0/88x31.png
 
