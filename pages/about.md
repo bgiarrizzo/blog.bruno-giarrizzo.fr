@@ -10,7 +10,7 @@ Vous pouvez me contactez sur "bruno **arobase** giarrizzo **point** fr". Merci d
 
 <h2 class="pb-2 border-bottom">A propos de l'auteur</h2>
 
-Bonjour ! Je suis Bruno, lillois, marié et Papa d'une petite fille. 
+Bonjour ! Je suis Bruno, lillois, marié et Papa d'une petite fille.
 
 Je code depuis plusieurs mois en voguant entre le Back-end (Python / Django / Flask), le Front-end (React), le mobile (swift). J'évolue maintenant dans des missions Dev et Ops, jonglant avec automatisation, déploiement applicatifs, au travers d'infrastructure cloud, developpement d'API, de front-end React/Vue.js.
 
@@ -22,8 +22,8 @@ Ce blog, ce (futur) podcast, et cette (future) chaine youtube sont entièrement 
 
 Néanmoins, si mes contenus vous plaisent, vous pouvez me soutenir ponctuellement [via PayPal](https://paypal.me/bgiarrizzo), ou plus régulièrement [via liberapay](https://liberapay.com/bgiarrizzo/donate) .
 
-Vous pourriez me suivre sur Facebook ou Instagram, mais ces comptes ne sont plus actifs, et existent uniquement pour ma présence sur le web, je suis disponible parfois sur [twitter](https://twitter.com/b_giarrizzo). 
+Vous pourriez me suivre sur Facebook ou Instagram, mais ces comptes ne sont plus actifs, et existent uniquement pour ma présence sur le web, je suis disponible parfois sur [twitter](https://twitter.com/{{ site.social_ids.twitter }}).
 
-Vous pouvez également me suivre via mon [flux RSS](https://www.bruno-giarrizzo.fr/feed.xml).
+Vous pouvez également me suivre via mon [flux RSS]({{ site.url }}/feed.xml).
 
 Je vous laisse découvrir mon travail et mon univers. A bientôt :)

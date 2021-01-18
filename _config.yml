@@ -6,9 +6,32 @@ description: Bruno Giarrizzo, Freelance, Developer & DevOps
 description_meta: "Bruno Giarrizzo, Papa, Freelance, Developpeur & DevOps. Parle de code, de développement personnel, d'investissement et de business."
 description_long: >
   Papa, Freelance, Developpeur & DevOps. Parle de code, de développement personnel, d'investissement et de business. <br /><br />
-  <a href="https://www.bruno-giarrizzo.fr/about/">Contactez moi</a> pour toute question, ou <a href="https://paypal.me/bgiarrizzo" target="_blank">soutenez mon travail</a> !
+  <a href="/about/">Contactez moi</a> pour toute question, ou <a href="https://paypal.me/bgiarrizzo" target="_blank">soutenez mon travail</a> !
 
-keywords: [Bruno, Giarrizzo, Bruno Giarrizzo, Freelance, Développeur, DevOps, Ethical Hacker, Ethical, Hacker, Django, Python, Swift, Ansible, Terraform, Kubernetes, Infra as Code, Investissement, Immobilier, Entrepreneuriat, Business, Entreprise]
+keywords:
+  [
+    Bruno,
+    Giarrizzo,
+    Bruno Giarrizzo,
+    Freelance,
+    Développeur,
+    DevOps,
+    Ethical Hacker,
+    Ethical,
+    Hacker,
+    Django,
+    Python,
+    Swift,
+    Ansible,
+    Terraform,
+    Kubernetes,
+    Infra as Code,
+    Investissement,
+    Immobilier,
+    Entrepreneuriat,
+    Business,
+    Entreprise,
+  ]
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -39,13 +62,13 @@ social_ids:
   twitter: b_giarrizzo
   instagram: bgiarrizzo
   youtube: UCSXj4YcwcmH57INCrNAR03Q
-  github:  bgiarrizzo
+  github: bgiarrizzo
   gitlab: bgiarrizzo
 
 email: contact@bruno-giarrizzo.fr
 
 # -----------------------------------------
-# Podcast Settings 
+# Podcast Settings
 
 podcast_title: "Unlock Business & Code"
 podcast_subtitle: "Sous titre"
@@ -54,7 +77,7 @@ podcast_description: "J'apprends le business, l'investissement, je suis aussi fr
 author: Bruno Giarrizzo
 author_url: "https://www.bruno-giarrizzo.fr/"
 
-itunes_categories: 
+itunes_categories:
   - <itunes:category text="Business"><itunes:category text="Investing" /></itunes:category>
   - <itunes:category text="Society &amp; Culture"><itunes:category text="Documentary" /></itunes:category>
   - <itunes:category text="Technology" />
@@ -87,7 +110,7 @@ plugins:
 
 exclude:
   - .gitignore
-#   - .sass-cache/
+  #   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
   - Gemfile
@@ -108,6 +131,9 @@ collections:
     output: true
   # book listing in markdown files
   books:
+    output: true
+  # links
+  links:
     output: true
 
 defaults:
