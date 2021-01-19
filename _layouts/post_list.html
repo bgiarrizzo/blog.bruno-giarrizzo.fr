@@ -6,10 +6,12 @@ layout: default
     <div class="row">
         {% for post in site.posts %}
             {% if post.category != "Podcast" %}
-                <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <article class="col-12 mb-4">
                     <div class="card shadow">
                         {% if post.cover %}
-                            <img alt="{{ post.cover_alt}}" class="card-img-top" src="{{ site.url }}/{{ post.cover }}">
+                            <div class="card-header m-0 p-0" style="height: auto; display: block; text-align: center; width: 100%; max-width: none;">
+                                <img alt="{{ post.cover_alt }}" class="card-img-top" src="{{ site.url }}/{{ post.cover }}">
+                            </div>
                         {% endif %}
                         <div class="card-body">
                             <h2 class="card-title">
@@ -20,9 +22,11 @@ layout: default
                             <p class="text-muted">
                                 <i class="far fa-clock"></i> {{ post.date | date: "%B %e, %Y" }}
                             </p>
-                            <p class="text-justify mb-0">
-                                {{ post.summary }}
-                            </p>
+                            {% if post.summary %}
+                                <p class="text-justify mb-0">
+                                    {{ post.summary }}
+                                </p>
+                            {% endif %}
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">
