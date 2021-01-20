@@ -4,7 +4,7 @@ layout: default
 
 <div class="container">
     <div class="row">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
             {% if post.category != "Podcast" %}
                 <article class="col-12 mb-4">
                     <div class="card shadow">
@@ -38,4 +38,40 @@ layout: default
             {% endif %}
         {% endfor %}
     </div>
+    {% if paginator.total_pages > 1 %}
+        <nav class="row  mx-auto">
+            <div class="pagination mb-4 mx-auto">
+                {% if paginator.previous_page %}
+                    <li class="page-item">
+                        <a href="{{ paginator.previous_page_path }}" class="page-link">Previous</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                {% endif %}
+                {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                        <li class="page-item active">
+                            <a class="page-link" href="{{ '/' | relative_url }}">{{ page }} <span class="sr-only">(current)</span></a>
+                        </li>
+                    {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                
+                {% if paginator.next_page %}
+                    <li class="page-item">
+                        <a href="{{ paginator.next_page_path }}" class="page-link">Next</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                {% endif %}
+            </div>
+        </nav>
+    {% endif %}
 </div>

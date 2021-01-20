@@ -107,6 +107,7 @@ episodes_per_feed_page: 100
 
 plugins:
   - jekyll-octopod
+  - jekyll-paginate
 
 exclude:
   - .gitignore
