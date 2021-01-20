@@ -1,5 +1,11 @@
+.card-header img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
 /* audiojs */
 
 #player {
-    width: 100%;
+  width: 100%;
 }
