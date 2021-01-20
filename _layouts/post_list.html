@@ -27,7 +27,20 @@ layout: default
                                     {{ post.summary }}
                                 </p>
                             {% endif %}
+                            {% if post.tags %}
+                                <div class="col-12">
+                                    <hr />
+                                    <ul class="list-inline text-center mb-0">
+                                        {% for tag in post.tags %}
+                                            <li class="list-inline-item">
+                                                <a class="badge badge-primary text-white">#{{ tag }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
                         </div>
+                        
                         <div class="card-footer">
                             <small class="text-muted">
                                 Par Bruno, dans <strong>{{ post.categories }}</strong>
