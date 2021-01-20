@@ -67,6 +67,9 @@ social_ids:
 
 email: contact@bruno-giarrizzo.fr
 
+paginate: 5
+paginate_path: "/page:num/"
+
 # -----------------------------------------
 # Podcast Settings
 
