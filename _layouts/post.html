@@ -93,7 +93,11 @@ layout: default
           Commentaires
         </div>
         <div class="card-body py-1 px-3">
-          {% include disqus.html %}
+          {% if site.url != "http://localhost:4000" %}
+            {% include disqus.html %}
+          {% else %}
+            <p class="m-5">Ceci est un fake bloc, afin de simuler un espace de commentaires ...</p>
+          {% endif %}
         </div>
       </div>
     </div>
